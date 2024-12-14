@@ -2,6 +2,7 @@ package api
 
 import (
 	"fmt"
+
 	"github.com/labstack/echo/v4"
 )
 
@@ -21,8 +22,8 @@ func NewServer(ip string, port int, maxSize int, uc Usecase) *Server {
 	}
 
 	api.server = echo.New()
-	api.server.GET("/hello", api.GetHello)
-	api.server.POST("/hello", api.PostHello)
+	api.server.GET("/get", api.GetHello)
+	api.server.POST("/post", api.PostHello)
 
 	api.address = fmt.Sprintf("%s:%d", ip, port)
 

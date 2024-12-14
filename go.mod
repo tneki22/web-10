@@ -1,6 +1,6 @@
-module github.com/ValeryBMSTU/web-10
+module web-10
 
-go 1.22.1
+go 1.22
 
 require (
 	github.com/labstack/echo/v4 v4.12.0
